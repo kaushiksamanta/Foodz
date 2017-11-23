@@ -2,17 +2,7 @@
 
 
 
-var PORT;
-
-if (process.env.NODE_ENV == 'test') {
-    PORT = 8001;
-} else if (process.env.NODE_ENV == 'dev') {
-    PORT = 8002;
-} else {
-    PORT = 8000;
-}
-
-
+var PORT = process.env.PORT || 8000;
 var DOMAIN_NAME_MAIL = 'http://52.91.44.245:'+PORT;
 var SERVER = {
     APP_NAME: 'Your App Name',
