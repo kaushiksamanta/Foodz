@@ -3,9 +3,9 @@
 
 
 var PORT = process.env.PORT || 8000;
-var DOMAIN_NAME_MAIL = 'http://52.91.44.245:'+PORT;
+var DOMAIN_NAME_MAIL = 'foodz-kaushik.herokuapp.com';
 var SERVER = {
-    APP_NAME: 'Your App Name',
+    APP_NAME: 'Foodz',
     PORTS: {
         HAPI: PORT
     },
@@ -208,11 +208,6 @@ var STATUS_MSG = {
             statusCode:400,
             customMessage : 'Phone no. cannot start with 0',
             type : 'INVALID_PHONE_NO_FORMAT'
-        },
-        CHARITYOWNERID: {
-            statusCode:400,
-            customMessage : 'Charity Owner Id Required',
-            type : 'INVALID_CHARITY_ID'
         },
         COUNTRY_REQUIRED: {
             statusCode:400,
